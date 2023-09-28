@@ -1,0 +1,70 @@
+intents:
+  - greetings
+  - farewell
+  - thank_you
+  - ask_language
+  - translate
+  - ask_translation
+  - provide_translation
+  - unknown
+  # Add more intents as needed for your chatbot
+
+entities:
+  - language
+  - text_to_translate
+  # Add more entities as needed for your chatbot
+
+responses:
+  utter_translation:
+    - text: "The translation of '{text_to_translate}' to '{language}' is: {translation}"
+
+  utter_greetings:
+    - text: "Hello! How can I assist you today?"
+
+  utter_farewell:
+    - text: "Goodbye! Have a great day."
+
+  utter_thank_you:
+    - text: "You're welcome! If you have more questions, feel free to ask."
+
+  utter_ask_language:
+    - text: "Sure! Which language would you like to translate to?"
+
+  utter_unknown_intent:
+    - text: "I'm not sure how to help with that. You can ask me to translate text."
+  # Add more responses as needed for your chatbot
+
+actions:
+  - action_read_file
+  - action_greet_user
+  - action_translate
+  - action_provide_weather
+  - action_recommend_product
+  - action_schedule_appointment
+  - 
+  # Add more actions as needed for your chatbot
+
+templates:
+  utter_ask_language:
+    - text: "Sure! Which language would you like to translate to?"
+  # Add more templates as needed for your chatbot
+
+  utter_translation_success:
+    - text: "The translation of '{text_to_translate}' to '{language}' is: {translation}"
+    
+  utter_translation_failure:
+    - text: "I couldn't perform the translation. Please try again later."
+
+  utter_greet_timeofday:
+    - text: "Good {timeofday}! How can I assist you today?"
+
+  utter_recommend_product:
+    - text: "I recommend the following product: {product_name}. It's a great choice!"
+
+  utter_appointment_confirmation:
+    - text: "Your appointment for {date} at {time} has been scheduled."
+
+  utter_thank_you_custom:
+    - text: "You're very welcome! If you need further assistance, feel free to ask."
+
+  # Add more templates as needed for your chatbot
