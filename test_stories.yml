@@ -1,0 +1,59 @@
+version: "2.0"
+
+stories:
+- story: User greets the bot
+  steps:
+    - intent: greetings
+    - action: action_greet_user
+
+- story: User asks for a translation
+  steps:
+    - intent: ask_translation
+    - action: action_translate
+
+- story: User asks for weather information
+  steps:
+    - intent: ask_weather
+    - action: action_provide_weather
+
+- story: User requests a product recommendation
+  steps:
+    - intent: recommend_product
+    - action: action_recommend_product
+
+- story: User schedules an appointment
+  steps:
+    - intent: schedule_appointment
+    - action: action_schedule_appointment
+
+- story: User asks to read a file
+  steps:
+    - intent: ask_read_file
+    - action: action_read_file
+
+- story: User says thank you
+  steps:
+    - intent: thank_you
+    - action: utter_thank_you_custom
+
+- story: User asks for help
+  steps:
+    - intent: help
+    - action: utter_help_instructions
+
+- story: User provides unknown input
+  steps:
+    - intent: unknown
+    - action: action_unknown_intent
+
+- story: User inquires about supported languages
+  steps:
+    - intent: ask_language
+    - action: action_supported_languages
+
+- story: User asks for a translation result
+  steps:
+    - intent: provide_translation
+    - action: action_provide_translation
+
+# Add more stories based on different user interactions and intents
