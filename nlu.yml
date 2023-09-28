@@ -1,0 +1,78 @@
+nlu:
+- intent: greetings
+  examples: |
+    - Hi
+    - Hello
+    - Hey there
+    - Good day
+
+- intent: farewell
+  examples: |
+    - Goodbye
+    - Bye
+    - See you later
+    - Farewell
+
+- intent: thank_you
+  examples: |
+    - Thanks
+    - Thank you
+    - Much appreciated
+    - Thanks a lot
+
+- intent: ask_language
+  examples: |
+    - What languages can you translate to?
+    - Tell me the available languages
+    - Which languages do you support?
+
+- intent: translate
+  examples: |
+    - Translate "Hello" to French
+    - How do you say "Goodbye" in Spanish?
+    - Translate "Thank you" to German
+    - Can you help me with a translation?
+
+- intent: ask_translation
+  examples: |
+    - What's the translation of "Good morning" in Hindi?
+    - How do I say "Please" in Italian?
+    - Translate "How are you?" to Chinese
+    - Can you translate this for me?
+
+- intent: provide_translation
+  examples: |
+    - The translation of "Bonjour" to English is: "Hello"
+    - "Auf Wiedersehen" in German means "Goodbye"
+    - In Spanish, "Gracias" translates to "Thank you"
+    - Here's the translation you requested: "{translation}"
+    - The word "{text}" translates to "{translation}"
+
+- intent: unknown
+  examples: |
+    - I don't understand
+    - What are you saying?
+    - That doesn't make sense
+    - Can you repeat that?
+
+# Add more intents and examples as needed for your chatbot
+
+- intent: greet_timeofday
+  examples: |
+    - Good morning
+    - Good afternoon
+    - Good evening
+
+- intent: recommend_product
+  examples: |
+    - What product do you recommend?
+    - Suggest a product for me
+    - Any product suggestions?
+
+- intent: schedule_appointment
+  examples: |
+    - Can I schedule an appointment?
+    - How do I book an appointment?
+    - I'd like to set up a meeting
+
+# Add more intents and examples for new actions
